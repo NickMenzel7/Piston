@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+recursive-include piston_core *.py
+recursive-include piston_ui *.py
+include Piston.py
+include piston.spec
+recursive-include hooks *.py
+recursive-include scripts *.ps1

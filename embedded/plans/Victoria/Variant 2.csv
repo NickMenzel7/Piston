@@ -1,0 +1,28 @@
+Seq #,Station Type,Station Name,Test Sequence,Port,Proc #,Area,Area Category,Stn Opts+,Stn Opts-,Status,Tested @,Start Time,Test Time,Comments
+1,ET57834,Freq Extender Validation,Initialization,CPU,3,2,2,,,PASSED,sr-ssd68,2025/09/24 11:59:07,00:00:21,A
+2,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,20,2,2,,1,PASSED,sr-ssd68,2025/09/25 16:06:12,00:11:37,A
+3,ET57834,Freq Extender Validation,Adjustments,RF1,28,2,2,,1,PASSED,sr-ssd68,2025/11/01 11:14:02,03:57:31,A
+4,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,16,2,2,,1,CLEARED,sr-ssd68,2025/09/26 14:49:05,01:10:10,
+5,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,27,2,2,,1,PASSED,sr-ssd68,2025/10/15 12:49:23,01:13:28,E
+6,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,5,2,2,,2,PASSED,sr-ssd68,2025/10/15 14:17:19,01:04:13,E
+7,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,15,2,2,,2,PASSED,sr-ssd68,2025/10/16 10:22:17,00:09:32,
+8,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,25,2,2,,2,PASSED,sr-ssd68,2025/10/16 10:33:10,00:45:02,E
+9,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,28,2,2,,2,PASSED,sr-ssd68,2025/10/16 11:23:55,00:36:56,K (Dependency group B parent)
+10,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,45,2,2,,2,PASSED,sr-ssd68,2025/10/16 12:10:11,19:36:57,K (Dependency group B child)
+11,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,26,2,2,,4,PASSED,sr-ssd68,2025/10/17 10:53:43,01:32:00,K (Dependency group B child)
+12,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,10,2,2,,4,CLEARED,sr-ssd68,2025/11/02 15:46:22,00:21:37,K (Dependency group B child)
+13,ET57834,Freq Extender Validation,Amplitude Accuracy,RF1,55,2,2,,4,PASSED,sr-ssd68,2025/11/01 16:14:24,00:26:10,
+14,ET57834,Freq Extender Validation,Spectral,RF1,1103,2,2,,4,PASSED,sr-ssd68,2025/10/20 09:46:31,09:12:04,
+15,ET57834,Freq Extender Validation,Spectral,RF2,1104,2,2,,4,PASSED,sr-ssd68,2025/11/02 19:01:25,23:20:59,
+16,ET57834,Freq Extender Validation,Spectral,RF1,1105,2,2,,4,PASSED,sr-ssd68,2025/10/22 12:31:14,05:54:57,
+17,ET57834,Freq Extender Validation,Spectral,RF1,1106,2,2,,4,PASSED,sr-ssd68,2025/10/23 05:40:45,05:42:48,
+18,ET57834,Freq Extender Validation,Acpr,RF2,100,2,2,,4,CLEARED,sr-ssd68,2025/11/04 08:11:31,03:42:47,
+19,ET57834,Freq Extender Validation,PulseModulation,RF1,12,2,2,,8,PASSED,sr-ssd68,2025/10/24 09:07:15,00:46:13,
+20,ET57834,Freq Extender Validation,PulseModulation,RF1,6,2,2,,8,PASSED,sr-ssd68,2025/10/24 16:17:16,17:10:15,
+21,ET55857,X-Mod,Switching Speed,RF1,2,2,2,,8,PASSED,sr-ssd10,2025/10/26 17:28:36,01:19:14,
+22,ET55857,X-Mod,Switching Speed,RF1,3,2,2,,8,PASSED,sr-ssd10,2025/10/26 19:06:21,11:41:09,
+23,ET55857,X-Mod,Switching Speed,RF1,4,2,2,,8,PASSED,sr-ssd10,2025/10/27 08:03:52,01:36:11,
+24,ET55857,X-Mod,Switching Speed,RF1,12,2,2,,8,PASSED,sr-ssd10,2025/10/27 09:45:13,00:44:59,
+25,ET57381,Peanuts Phase Noise ,PhaseNoiseG2.4,RF1,110,2,2,,,PASSED,sr-ssd27,2025/10/28 10:07:59,00:25:15,
+26,ET57381,Peanuts Phase Noise ,PhaseNoiseG2.4,RF1,111,2,2,,,CLEARED,sr-ssd27,2025/10/28 10:34:01,00:30:22,
+27,ET54791,Postponement,CustomerInit,CPU,2,2,2,,,PASSED,sr-ssd17,2025/11/05 08:46:27,00:00:13,G (Ship It)

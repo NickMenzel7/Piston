@@ -1,0 +1,53 @@
+Seq #,Station Type,Station Name,Test Sequence,Proc #,Area,Area Category,Stn Opts+,Stn Opts-,Status,Tested @,Start Time,Test Time,Assigned Slot,Comments
+1,TOEI,Turn On EI,Initialization,5,2,2,,,CLEARED,sas075,1/22/2026 12:13,02:45:34,,A
+2,ET58097,6G Align-X,Alignment,5,2,2,,,CLEARED,sr-ssd78,1/28/2026 13:56,00:16:42,,A
+3,XFREI,Transfer EI (YS loading),TransferGate,5,2,2,,,CLEARED,sas115,1/28/2026 14:44,00:00:20,,C
+7,ET57033,PNA-X,WidebandSACalibratorCal,5,2,2,,,PASSED,sas106,2/3/2026 13:28,02:00:01,89,A; M1 (Diversity group A1)
+8,HoldingBay6G,,InBoxCalMPB,5,2,2,,,PASSED,sas109,2/3/2026 16:55,00:08:32,,A
+9,HoldingBay6G,,InBoxCalMPBPaLow,5,2,2,,,PASSED,sas109,2/3/2026 17:08,00:03:01,,A
+10,HoldingBay6G,,InBoxCalMPBPaHigh,5,2,2,,,PASSED,sas109,2/3/2026 17:20,00:06:10,,A
+11,HoldingBay6G,,InBoxCalSTD,5,2,2,,,PASSED,sas109,2/3/2026 17:20,00:17:48,,A
+12,HoldingBay6G,,InBoxCalSTDPaLow,5,2,2,,,PASSED,sas109,2/3/2026 17:38,00:25:05,,A
+13,HoldingBay6G,,InBoxCalSTDPaHigh,5,2,2,,,PASSED,sas109,2/3/2026 18:04,00:25:06,,A
+14,HoldingBay6G,,InBoxCalDirect,5,2,2,,,FAILED,sas109,2/3/2026 18:30,00:02:32,,A
+15,HoldingBay6G,,InBoxCalB40Rf,5,2,2,,,PASSED,sas109,2/3/2026 18:33,01:16:30,,A
+16,HoldingBay6G,,InBoxCalB40If,5,2,2,,,CLEARED,sas109,1/28/2026 20:41,00:01:22,,A
+17,HoldingBay6G,,InBoxCalB4XRf,5,2,2,,,PASSED,sas109,2/3/2026 19:50,01:17:58,,A
+18,HoldingBay6G,,InBoxCalB4XIf,5,2,2,,,CLEARED,sas109,1/28/2026 22:01,00:01:14,,A
+19,HoldingBay6G,,InBoxCalR20Rf,5,2,2,,,CLEARED,sas109,1/28/2026 22:04,00:00:37,,A; I (R20)
+20,HoldingBay6G,,InBoxCalR20If,5,2,2,,,CLEARED,sas109,1/28/2026 22:06,00:01:06,,A; I (R20)
+21,HoldingBay6G,,InBoxCalR40Rf,5,2,2,,,CLEARED,sas109,1/28/2026 22:09,00:00:23,,A; I (R40)
+22,HoldingBay6G,,InBoxCalR40If,5,2,2,,,CLEARED,sas109,1/28/2026 22:10,02:19:24,,A; I (R40)
+23,HoldingBay6G,,InBoxCalR80Rf,5,2,2,,,CLEARED,sas109,1/29/2026 00:35,00:02:07,,A; I (R80)
+24,HoldingBay6G,,InBoxCalR80If,5,2,2,,,CLEARED,sas109,1/29/2026 00:36,01:39:53,,A; I (R80)
+25,HoldingBay6G,,LOAlignment,5,2,2,,,CLEARED,sas109,1/29/2026 02:18,00:07:57,,A
+26,HoldingBay6G,,TrainingAlignment,5,2,2,,,CLEARED,sas109,1/29/2026 02:27,02:30:43,,A
+27,Load6G,,NfeCal,5,2,2,,,CLEARED,sas100,1/29/2026 05:03,00:01:31,,A
+28,ET57033,PNA-X,RFFlatnessVerify,5,2,2,,,FAILED,sas056,2/4/2026 12:13,01:53:35,,M1 (Diversity group A2)
+29,ET57033,PNA-X,RFFlatnessVerifyWideRbw,5,2,2,,,FAILED,sas056,2/4/2026 17:41,01:41:18,,M1 (Diversity group A2)
+30,ET57033,PNA-X,RFFlatnessVerifyB40,5,2,2,,,PASSED,sas056,2/4/2026 19:24,01:45:53,,I (B40); M1 (Diversity group A2)
+31,ET57033,PNA-X,RFFlatnessVerifyB4X,5,2,2,,,PASSED,sas056,2/4/2026 21:11,00:28:19,,I (B4X); M1 (Diversity group A2)
+32,ET57033,PNA-X,RFFlatnessVerifyR20,5,2,2,,,CLEARED,sas106,1/29/2026 13:52,00:29:29,,I (R20); M1 (Diversity group A2)
+33,ET57033,PNA-X,RFFlatnessVerifyR40,5,2,2,,,CLEARED,sas106,1/29/2026 14:22,00:26:10,,I (R40); M1 (Diversity group A2)
+34,ET57033,PNA-X,RFFlatnessVerifyR80,5,2,2,,,CLEARED,sas106,1/29/2026 17:49,00:25:26,,I (R80); M1 (Diversity group A2)
+35,ET57033,PNA-X,VSWR,5,2,2,,,CLEARED,sas106,1/29/2026 18:15,02:51:54,,
+36,ET57033,PNA-X,IFFlatnessVerify,5,2,2,,,CLEARED,sas106,1/30/2026 01:22,04:13:43,,M1 (Diversity group A2)
+37,ET57033,PNA-X,IFFlatnessVerifyB40,5,2,2,,,CLEARED,sas106,1/30/2026 05:36,00:51:04,,I (B40); M1 (Diversity group A2)
+38,ET57033,PNA-X,IFFlatnessVerifyB4X,5,2,2,,,CLEARED,sas106,1/30/2026 06:28,00:32:19,,I (B4X); M1 (Diversity group A2)
+39,ET57033,PNA-X,IFFlatnessVerifyR20,5,2,2,,,CLEARED,sas106,1/30/2026 07:01,01:15:30,,I (R20); M1 (Diversity group A2)
+40,ET57033,PNA-X,IFFlatnessVerifyR40,5,2,2,,,CLEARED,sas106,1/30/2026 08:17,02:57:22,,I (R40); M1 (Diversity group A2)
+41,ET57033,PNA-X,IFFlatnessVerifyR80,5,2,2,,,CLEARED,sas106,1/30/2026 11:16,00:27:04,,I (R80); M1 (Diversity group A2)
+42,Load6G,,Load,5,2,2,,,CLEARED,sas100,1/29/2026 05:05,02:28:28,,
+43,Load6G,,LoadWideband,5,2,2,,,CLEARED,sas100,1/30/2026 19:01,01:33:57,,
+44,Noise6G,,Noise,5,2,2,,,CLEARED,sas088,1/30/2026 22:27,00:15:01,,
+45,Noise6G,,Noise10GHz,5,2,2,1,,CLEARED,sas088,1/30/2026 22:43,00:15:01,,
+46,ET57033,PNA-X,SingleToneVerifyNA,5,2,2,,,FAILED,sas101,2/4/2026 02:45,03:23:40,,M1 (Diversity group A2)
+47,SingTone6G,,SingleToneVerify,5,2,2,,,CLEARED,sas110,1/30/2026 21:05,00:15:01,,
+48,SingTone6G,,SingleToneVerifyWideband,5,2,2,,,CLEARED,sas110,1/30/2026 21:20,00:15:01,,
+49,SingTone6G,,SingleToneVerifyAmplAccy,5,2,2,,,CLEARED,sas110,1/30/2026 21:36,00:15:01,,I (567)
+50,SingTone6G,,SingleToneVerifyIfFlatness,5,2,2,,,CLEARED,sas110,1/30/2026 21:52,00:15:01,,I (567)
+51,Dist6G,,TwoToneVerify,5,2,2,,,CLEARED,sas103,1/30/2026 20:37,00:08:36,,
+52,Dist6G,,TwoToneVerifyWideband,5,2,2,,,CLEARED,sas103,1/30/2026 20:46,00:15:23,,
+53,RCal6G,,RCalVerify,5,2,2,,,CLEARED,sas056,1/30/2026 22:09,00:15:13,,
+54,HiPot,High Potential Test,Hi Pot,5,2,2,,,CLEARED,,,,,K (Dependency group G parent)
+55,FINEI,Final EI,FinalConfiguration,5,2,2,,,CLEARED,,,,,A

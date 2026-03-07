@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "plan_file": "plan.json",
+    "timestamp": "2026-02-13T21:59:15.180461"
+  },
+  "weak": {
+    "error": "'112.0'"
+  },
+  "strong": {
+    "error": "'112.0'"
+  }
+}

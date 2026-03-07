@@ -1,0 +1,186 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>163df783-427c-4b94-b70a-425f16230d2e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Piston.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Piston</Name>
+    <RootNamespace>Piston</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\OneDrive - Keysight Technologies\Desktop\Piston\Piston 2.0\Piston 2.0">
+      <Link>Piston 2.0</Link>
+    </Compile>
+    <Compile Include="analyze_trace.py" />
+    <Compile Include="apply_dedicated_and_trace.py" />
+    <Compile Include="check_fully_dedicated.py" />
+    <Compile Include="check_stations.py" />
+    <Compile Include="create_plan_from_model.py" />
+    <Compile Include="create_simple_icon.py" />
+    <Compile Include="debug_dedicated.py" />
+    <Compile Include="debug_sched.py" />
+    <Compile Include="debug_smart_mode.py" />
+    <Compile Include="diagnose_gui_issue.py" />
+    <Compile Include="diag_tests_zero_and_mapping.py" />
+    <Compile Include="final_distribution_check.py" />
+    <Compile Include="hooks\rthook-pandas.py" />
+    <Compile Include="inspect_marker.py" />
+    <Compile Include="piston_core\constants.py" />
+    <Compile Include="piston_core\groups.py" />
+    <Compile Include="piston_core\io.py" />
+    <Compile Include="piston_core\mapping.py" />
+    <Compile Include="piston_core\scheduler.py" />
+    <Compile Include="piston_core\updater.py" />
+    <Compile Include="piston_core\utils.py" />
+    <Compile Include="piston_core\validation.py" />
+    <Compile Include="piston_core\__init__.py" />
+    <Compile Include="piston_ui\calculate.py" />
+    <Compile Include="piston_ui\channels_helper.py" />
+    <Compile Include="piston_ui\dialogs.py" />
+    <Compile Include="piston_ui\filters.py" />
+    <Compile Include="piston_ui\icon_helper.py" />
+    <Compile Include="piston_ui\io_dialogs.py" />
+    <Compile Include="piston_ui\manual_et.py" />
+    <Compile Include="piston_ui\project_mgmt.py" />
+    <Compile Include="piston_ui\scheduler_helper.py" />
+    <Compile Include="piston_ui\stations_view.py" />
+    <Compile Include="piston_ui\tests_view.py" />
+    <Compile Include="piston_ui\validation_helper.py" />
+    <Compile Include="profile_performance.py" />
+    <Compile Include="Python piston_core\scheduler.py" />
+    <Compile Include="run_sched_summary.py" />
+    <Compile Include="tests\conftest.py" />
+    <Compile Include="tests\test_channels_helper.py" />
+    <Compile Include="tests\test_scheduler_basic.py" />
+    <Compile Include="tests\test_scheduler_dedicated.py" />
+    <Compile Include="tests\test_scheduler_edgecases.py" />
+    <Compile Include="tests\test_startup_wrapper.py" />
+    <Compile Include="tests\test_ui_smoke.py" />
+    <Compile Include="tests\test_validation_helper.py" />
+    <Compile Include="test_alternate_spins.py" />
+    <Compile Include="test_capacity_estimator_fix.py" />
+    <Compile Include="test_channel_exclusion.py" />
+    <Compile Include="test_ff_scenario.py" />
+    <Compile Include="test_final_verification.py" />
+    <Compile Include="test_gui_cleanup.py" />
+    <Compile Include="test_hidden_stations.py" />
+    <Compile Include="test_integration_hidden_stations.py" />
+    <Compile Include="test_option_a.py" />
+    <Compile Include="test_parallel_fix.py" />
+    <Compile Include="test_plan_mapping_filters_hidden.py" />
+    <Compile Include="test_realistic_parallel.py" />
+    <Compile Include="test_selective_yield.py" />
+    <Compile Include="test_smart_parallel.py" />
+    <Compile Include="test_validation_filters_hidden.py" />
+    <Compile Include="test_yield_bug.py" />
+    <Compile Include="test_yield_models.py" />
+    <Compile Include="verify_build_version.py" />
+    <Compile Include="verify_no_console.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".github\" />
+    <Folder Include=".github\workflows\" />
+    <Folder Include="dist\" />
+    <Folder Include="dist\piston\" />
+    <Folder Include="embedded\" />
+    <Folder Include="hooks\" />
+    <Folder Include="piston_core\" />
+    <Folder Include="piston_ui\" />
+    <Folder Include="plans\" />
+    <Folder Include="plans\Bulleit 20GHz\" />
+    <Folder Include="plans\Mongoose\" />
+    <Folder Include="plans\Racer 8GHz\" />
+    <Folder Include="plans\VXG 20GHz\" />
+    <Folder Include="plans\VXG 8GHz\" />
+    <Folder Include="plans\VXG-C 54GHz\" />
+    <Folder Include="Python piston_core\" />
+    <Folder Include="scripts\" />
+    <Folder Include="tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".github\workflows\ci.yml" />
+    <Content Include=".github\workflows\pyinstaller-linux.yml" />
+    <Content Include=".github\workflows\pyinstaller-windows.yml" />
+    <Content Include=".gitignore" />
+    <Content Include="BUILD_SUMMARY_v1.0.md" />
+    <Content Include="build_unix.sh" />
+    <Content Include="build_windows.ps1" />
+    <Content Include="CAPACITY_ESTIMATOR_FIX.md" />
+    <Content Include="CAPACITY_ESTIMATOR_REDESIGN.md" />
+    <Content Include="CLEANUP_SUMMARY.md" />
+    <Content Include="clear_icon_cache.bat" />
+    <Content Include="COMPLETE_CLEANUP_REPORT.md" />
+    <Content Include="COMPLETE_ICON_IMPLEMENTATION.md" />
+    <Content Include="CONSOLE_FIX_VISUAL_GUIDE.md" />
+    <Content Include="CONSOLE_WINDOW_FIX.md" />
+    <Content Include="DISTRIBUTION_CHECKLIST.md" />
+    <Content Include="dist\piston\README_USERS.md" />
+    <Content Include="embedded\default_model.xlsx" />
+    <Content Include="HIDDEN_STATIONS_COMPLETE_FIX.md" />
+    <Content Include="HIDDEN_STATIONS_FIX.md" />
+    <Content Include="ICON_FIX_PYINSTALLER.md" />
+    <Content Include="ICON_NOT_SHOWING_FIX.md" />
+    <Content Include="LICENSE" />
+    <Content Include="MANIFEST.in" />
+    <Content Include="MENU_BAR_REDESIGN.md" />
+    <Content Include="NO_CONSOLE_QUICKREF.md" />
+    <Content Include="NPI_PLANNING_SMART_MODE.md" />
+    <Content Include="PARALLEL_SCHEDULING_FIX.md" />
+    <Content Include="piston.spec" />
+    <Content Include="plan.json" />
+    <Content Include="plans\Bulleit 20GHz\variant1.csv" />
+    <Content Include="plans\Bulleit 20GHz\variant2.csv" />
+    <Content Include="plans\Bulleit 20GHz\variant3.csv" />
+    <Content Include="plans\Mongoose\variant1.csv" />
+    <Content Include="plans\Mongoose\variant2.csv" />
+    <Content Include="plans\Mongoose\variant3.csv" />
+    <Content Include="plans\Racer 8GHz\variant1.csv" />
+    <Content Include="plans\Racer 8GHz\variant2.csv" />
+    <Content Include="plans\Racer 8GHz\variant3.csv" />
+    <Content Include="plans\VXG 20GHz\variant1.csv" />
+    <Content Include="plans\VXG 20GHz\variant2.csv" />
+    <Content Include="plans\VXG 20GHz\variant3.csv" />
+    <Content Include="plans\VXG 8GHz\variant1.csv" />
+    <Content Include="plans\VXG 8GHz\variant2.csv" />
+    <Content Include="plans\VXG 8GHz\variant3.csv" />
+    <Content Include="plans\VXG-C 54GHz\variant1.csv" />
+    <Content Include="plans\VXG-C 54GHz\variant2.csv" />
+    <Content Include="plans\VXG-C 54GHz\variant3.csv" />
+    <Content Include="PRIORITY2_REFACTORING.md" />
+    <Content Include="pyproject.toml" />
+    <Content Include="README.md" />
+    <Content Include="REBUILD_NO_CONSOLE.md" />
+    <Content Include="requirements.txt" />
+    <Content Include="scripts\build_pyinstaller_wheel.ps1" />
+    <Content Include="setup.cfg" />
+    <Content Include="SMART_MODE_GUIDE.md" />
+    <Content Include="SMART_MODE_RESULTS.md" />
+    <Content Include="TESTING_CHECKLIST.md" />
+    <Content Include="UPDATE_SYSTEM_GUIDE.md" />
+    <Content Include="version.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

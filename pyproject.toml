@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "piston"
+version = "0.1.0a1"
+description = "NPI planning/scheduling GUI application"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [ { name = "GitHub Copilot" } ]
+
+[project.urls]
+Homepage = "https://example.invalid/"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["piston_core*", "piston_ui*", "tests*", "Piston.py"]
+
+[tool.setuptools]
+package-data = { "" = ["plans/*", "Icon/*"] }

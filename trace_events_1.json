@@ -1,0 +1,2018 @@
+[
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "14",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "52",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "5",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "53",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "91",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "24",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "8",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "12",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "10",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "34",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "60",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "1",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_7",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "54",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "16",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_10",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "29",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "82",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_13",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_3",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_1",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_6",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "23",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_4",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "40",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "7",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "25",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "3",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "212",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "4",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "41",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "51",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "22",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "11",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "9",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "81",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_11",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_8",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "30",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_14",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "21",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_12",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "2",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_2",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "17",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "15",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_5",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "312",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "112",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "26",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "13",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "6",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "89",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "AUTO_9",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "28",
+    "unit": 0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "1",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "1",
+    "flow": 1,
+    "unit": 0,
+    "station": "Peanuts Phase Noise",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 0.20222222222222216,
+    "dur": 0.20222222222222216
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "10",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "10",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 0.26027777777777783,
+    "dur": 0.26027777777777783
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "11",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "11",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 0.5488888888888889,
+    "dur": 0.5488888888888889
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "112",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "112",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 0.26027777777777783,
+    "finish": 2.082777777777778,
+    "dur": 1.8225
+  },
+  {
+    "event": "push",
+    "pri": 2.082777777777778,
+    "flow": 1,
+    "tid": "31",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 2.082777777777778,
+    "flow": 1,
+    "tid": "32",
+    "unit": 0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "12",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "12",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 0.5488888888888889,
+    "finish": 0.738611111111111,
+    "dur": 0.18972222222222215
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "13",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "13",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 0.738611111111111,
+    "finish": 2.488333333333333,
+    "dur": 1.7497222222222217
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "14",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "14",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 2.488333333333333,
+    "finish": 8.284166666666666,
+    "dur": 5.795833333333333
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "15",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "15",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 8.284166666666666,
+    "finish": 9.143888888888888,
+    "dur": 0.8597222222222224
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "16",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "16",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 9.143888888888888,
+    "finish": 9.815277777777776,
+    "dur": 0.6713888888888888
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "17",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "17",
+    "flow": 1,
+    "unit": 0,
+    "station": "Postponement",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 0.046944444444444434,
+    "dur": 0.046944444444444434
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "2",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "2",
+    "flow": 1,
+    "unit": 0,
+    "station": "Hi Pot",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 0.0,
+    "dur": 0.0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "62",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "72",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.0,
+    "flow": 1,
+    "tid": "86",
+    "unit": 0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "21",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "21",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 2.082777777777778,
+    "finish": 2.2172222222222224,
+    "dur": 0.13444444444444445
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "212",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "212",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 2.2172222222222224,
+    "finish": 3.846111111111111,
+    "dur": 1.6288888888888888
+  },
+  {
+    "event": "push",
+    "pri": 3.846111111111111,
+    "flow": 1,
+    "tid": "33",
+    "unit": 0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "22",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "22",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 3.846111111111111,
+    "finish": 6.812499999999999,
+    "dur": 2.966388888888888
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "23",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "23",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 9.815277777777776,
+    "finish": 10.149444444444443,
+    "dur": 0.33416666666666667
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "24",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "24",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 10.149444444444443,
+    "finish": 15.867777777777777,
+    "dur": 5.718333333333334
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "25",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "25",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 15.867777777777777,
+    "finish": 16.705277777777777,
+    "dur": 0.8375
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "26",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "26",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 16.705277777777777,
+    "finish": 17.53111111111111,
+    "dur": 0.8258333333333333
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "28",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "28",
+    "flow": 1,
+    "unit": 0,
+    "station": "YS Loading Gate",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 0.3127777777777778,
+    "dur": 0.3127777777777778
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "29",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "29",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 6.812499999999999,
+    "finish": 6.866944444444443,
+    "dur": 0.05444444444444445
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "3",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "3",
+    "flow": 1,
+    "unit": 0,
+    "station": "Postponement",
+    "machine": 0,
+    "start": 0.046944444444444434,
+    "finish": 0.07027777777777777,
+    "dur": 0.02333333333333333
+  },
+  {
+    "event": "push",
+    "pri": 0.07027777777777777,
+    "flow": 1,
+    "tid": "63",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.07027777777777777,
+    "flow": 1,
+    "tid": "73",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.07027777777777777,
+    "flow": 1,
+    "tid": "83",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.07027777777777777,
+    "flow": 1,
+    "tid": "87",
+    "unit": 0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "30",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "30",
+    "flow": 1,
+    "unit": 0,
+    "station": "Align-X",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 0.0,
+    "dur": 0.0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "312",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "312",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 6.866944444444443,
+    "finish": 8.153055555555554,
+    "dur": 1.2861111111111112
+  },
+  {
+    "event": "push",
+    "pri": 8.153055555555554,
+    "flow": 1,
+    "tid": "36",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 8.153055555555554,
+    "flow": 1,
+    "tid": "35",
+    "unit": 0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "34",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "34",
+    "flow": 1,
+    "unit": 0,
+    "station": "Postponement",
+    "machine": 0,
+    "start": 0.07027777777777777,
+    "finish": 0.0736111111111111,
+    "dur": 0.0033333333333333335
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "4",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "4",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 17.53111111111111,
+    "finish": 19.35722222222222,
+    "dur": 1.8261111111111117
+  },
+  {
+    "event": "push",
+    "pri": 19.35722222222222,
+    "flow": 1,
+    "tid": "64",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 19.35722222222222,
+    "flow": 1,
+    "tid": "74",
+    "unit": 0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "40",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "40",
+    "flow": 1,
+    "unit": 0,
+    "station": "Align-X",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 2.3280555555555553,
+    "dur": 2.3280555555555553
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "41",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "41",
+    "flow": 1,
+    "unit": 0,
+    "station": "Align-X",
+    "machine": 0,
+    "start": 2.3280555555555553,
+    "finish": 2.3874999999999997,
+    "dur": 0.05944444444444443
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "5",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "5",
+    "flow": 1,
+    "unit": 0,
+    "station": "Postponement",
+    "machine": 0,
+    "start": 0.0736111111111111,
+    "finish": 0.18083333333333335,
+    "dur": 0.10722222222222223
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "51",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "51",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 8.153055555555554,
+    "finish": 12.40111111111111,
+    "dur": 4.248055555555555
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "52",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "52",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 19.35722222222222,
+    "finish": 19.923333333333332,
+    "dur": 0.5661111111111111
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "53",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "53",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 19.923333333333332,
+    "finish": 20.856944444444444,
+    "dur": 0.9336111111111112
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "54",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "54",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 20.856944444444444,
+    "finish": 23.190277777777776,
+    "dur": 2.3333333333333335
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "6",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "6",
+    "flow": 1,
+    "unit": 0,
+    "station": "Postponement",
+    "machine": 0,
+    "start": 0.18083333333333335,
+    "finish": 0.20833333333333334,
+    "dur": 0.0275
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "60",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "60",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 23.190277777777776,
+    "finish": 23.274166666666666,
+    "dur": 0.08388888888888889
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "62",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "62",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 12.40111111111111,
+    "finish": 13.320277777777777,
+    "dur": 0.9191666666666667
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "7",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "7",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 23.274166666666666,
+    "finish": 25.135833333333334,
+    "dur": 1.8616666666666668
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "72",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "72",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 13.320277777777777,
+    "finish": 16.26222222222222,
+    "dur": 2.941944444444445
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "8",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "8",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 25.135833333333334,
+    "finish": 25.290555555555557,
+    "dur": 0.15472222222222223
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "81",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "81",
+    "flow": 1,
+    "unit": 0,
+    "station": "",
+    "machine": null,
+    "start": 0.0,
+    "finish": 0.0,
+    "dur": 0.0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "82",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "82",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 16.26222222222222,
+    "finish": 16.4425,
+    "dur": 0.18027777777777784
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "86",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "86",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 25.290555555555557,
+    "finish": 25.89805555555556,
+    "dur": 0.6075
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "89",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "89",
+    "flow": 1,
+    "unit": 0,
+    "station": "",
+    "machine": null,
+    "start": 0.0,
+    "finish": 0.0,
+    "dur": 0.0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "9",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "9",
+    "flow": 1,
+    "unit": 0,
+    "station": "Peanuts Phase Noise",
+    "machine": 0,
+    "start": 0.20222222222222216,
+    "finish": 0.8141666666666667,
+    "dur": 0.6119444444444445
+  },
+  {
+    "event": "push",
+    "pri": 0.8141666666666667,
+    "flow": 1,
+    "tid": "44",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.8141666666666667,
+    "flow": 1,
+    "tid": "43",
+    "unit": 0
+  },
+  {
+    "event": "push",
+    "pri": 0.8141666666666667,
+    "flow": 1,
+    "tid": "42",
+    "unit": 0
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "91",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "91",
+    "flow": 1,
+    "unit": 0,
+    "station": "Align-X",
+    "machine": 0,
+    "start": 2.3874999999999997,
+    "finish": 2.4213888888888886,
+    "dur": 0.033888888888888885
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_1",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_1",
+    "flow": 1,
+    "unit": 0,
+    "station": "YS Loading Gate",
+    "machine": 0,
+    "start": 0.3127777777777778,
+    "finish": 2.7127777777777777,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_10",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_10",
+    "flow": 1,
+    "unit": 0,
+    "station": "Peanuts Phase Noise",
+    "machine": 0,
+    "start": 0.8141666666666667,
+    "finish": 22.414166666666667,
+    "dur": 21.6
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_11",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_11",
+    "flow": 1,
+    "unit": 0,
+    "station": "X-Mod2",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 2.4,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_12",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_12",
+    "flow": 1,
+    "unit": 0,
+    "station": "Hi Pot",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 2.4,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_13",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_13",
+    "flow": 1,
+    "unit": 0,
+    "station": "VXG Channel",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 2.4,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_14",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_14",
+    "flow": 1,
+    "unit": 0,
+    "station": "Racer Channel",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 2.4,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_2",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_2",
+    "flow": 1,
+    "unit": 0,
+    "station": "High Power Cal",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 2.4,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_3",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_3",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 25.89805555555556,
+    "finish": 28.298055555555557,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_4",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_4",
+    "flow": 1,
+    "unit": 0,
+    "station": "Postponement",
+    "machine": 0,
+    "start": 0.20833333333333334,
+    "finish": 2.6083333333333334,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_5",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_5",
+    "flow": 1,
+    "unit": 0,
+    "station": "X-Mod",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 2.4,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_6",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_6",
+    "flow": 1,
+    "unit": 0,
+    "station": "Align-X",
+    "machine": 0,
+    "start": 2.4213888888888886,
+    "finish": 4.8213888888888885,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_7",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_7",
+    "flow": 1,
+    "unit": 0,
+    "station": "SSA MINT",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 2.4,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_8",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_8",
+    "flow": 1,
+    "unit": 0,
+    "station": "Modular Phase Noise",
+    "machine": 0,
+    "start": 0.0,
+    "finish": 2.4,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.0,
+      0,
+      1,
+      "AUTO_9",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "AUTO_9",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 16.4425,
+    "finish": 18.842499999999998,
+    "dur": 2.4
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.07027777777777777,
+      0,
+      1,
+      "63",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "63",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 18.842499999999998,
+    "finish": 18.93972222222222,
+    "dur": 0.09722222222222222
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.07027777777777777,
+      0,
+      1,
+      "73",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "73",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 18.93972222222222,
+    "finish": 19.719166666666663,
+    "dur": 0.7794444444444445
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.07027777777777777,
+      0,
+      1,
+      "83",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "83",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 19.719166666666663,
+    "finish": 19.881111111111107,
+    "dur": 0.16194444444444445
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.07027777777777777,
+      0,
+      1,
+      "87",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "87",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 28.298055555555557,
+    "finish": 28.73638888888889,
+    "dur": 0.43833333333333335
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.8141666666666667,
+      0,
+      1,
+      "42",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "42",
+    "flow": 1,
+    "unit": 0,
+    "station": "Peanuts Phase Noise",
+    "machine": 0,
+    "start": 22.414166666666667,
+    "finish": 22.940555555555555,
+    "dur": 0.5263888888888888
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.8141666666666667,
+      0,
+      1,
+      "43",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "43",
+    "flow": 1,
+    "unit": 0,
+    "station": "Peanuts Phase Noise",
+    "machine": 0,
+    "start": 22.940555555555555,
+    "finish": 23.199444444444445,
+    "dur": 0.25888888888888884
+  },
+  {
+    "event": "pop",
+    "tup": [
+      0.8141666666666667,
+      0,
+      1,
+      "44",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "44",
+    "flow": 1,
+    "unit": 0,
+    "station": "Peanuts Phase Noise",
+    "machine": 0,
+    "start": 23.199444444444445,
+    "finish": 23.536944444444444,
+    "dur": 0.3375
+  },
+  {
+    "event": "pop",
+    "tup": [
+      2.082777777777778,
+      0,
+      1,
+      "31",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "31",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 19.881111111111107,
+    "finish": 20.242777777777775,
+    "dur": 0.36166666666666664
+  },
+  {
+    "event": "pop",
+    "tup": [
+      2.082777777777778,
+      0,
+      1,
+      "32",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "32",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 28.73638888888889,
+    "finish": 29.18277777777778,
+    "dur": 0.44638888888888884
+  },
+  {
+    "event": "pop",
+    "tup": [
+      3.846111111111111,
+      0,
+      1,
+      "33",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "33",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 20.242777777777775,
+    "finish": 20.6775,
+    "dur": 0.4347222222222221
+  },
+  {
+    "event": "pop",
+    "tup": [
+      8.153055555555554,
+      0,
+      1,
+      "35",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "35",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 20.6775,
+    "finish": 21.22722222222222,
+    "dur": 0.5497222222222221
+  },
+  {
+    "event": "pop",
+    "tup": [
+      8.153055555555554,
+      0,
+      1,
+      "36",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "36",
+    "flow": 1,
+    "unit": 0,
+    "station": "ACLR-Test",
+    "machine": 0,
+    "start": 29.18277777777778,
+    "finish": 29.4875,
+    "dur": 0.30472222222222217
+  },
+  {
+    "event": "pop",
+    "tup": [
+      19.35722222222222,
+      0,
+      1,
+      "64",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "64",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 21.22722222222222,
+    "finish": 21.321944444444444,
+    "dur": 0.09472222222222222
+  },
+  {
+    "event": "pop",
+    "tup": [
+      19.35722222222222,
+      0,
+      1,
+      "74",
+      0
+    ]
+  },
+  {
+    "event": "assign",
+    "tid": "74",
+    "flow": 1,
+    "unit": 0,
+    "station": "PNA-X",
+    "machine": 0,
+    "start": 21.321944444444444,
+    "finish": 23.857777777777777,
+    "dur": 2.5358333333333336
+  }
+]
