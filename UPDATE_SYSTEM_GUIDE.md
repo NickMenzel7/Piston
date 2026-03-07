@@ -42,7 +42,7 @@ python -m PyInstaller --noconfirm piston.spec
 
 **Option A: GitHub Web UI** (easiest)
 ```
-1. Go to: https://github.com/YOUR_USERNAME/YOUR_REPO/releases
+1. Go to: https://github.com/NickMenzel7/Piston/releases
 2. Click "Draft a new release"
 3. Fill in:
    - Tag: v1.0.1
@@ -51,7 +51,7 @@ python -m PyInstaller --noconfirm piston.spec
      ## What's New
      - Fixed yield calculation in parallel mode
      - Improved station validation
-     
+
 4. Upload: dist/piston/piston.exe (drag & drop)
 5. Click "Publish release"
 ```
@@ -59,10 +59,7 @@ python -m PyInstaller --noconfirm piston.spec
 **Option B: Command Line** (faster)
 ```powershell
 # Install GitHub CLI first: https://cli.github.com/
-gh release create v1.0.1 `
-  --title "Piston v1.0.1" `
-  --notes "Fixed yield calculation bug" `
-  dist/piston/piston.exe
+gh release create v1.0.1 --title "Piston v1.0.1" --notes "Fixed yield calculation bug" dist\piston\piston.exe
 ```
 
 **That's it!** Users get the update next time they launch.
@@ -101,13 +98,13 @@ If NO:  Update applies next time
 
 **File: `piston_core/updater.py`**
 
+Already configured for your repo:
 ```python
-# Line 13 - Change this:
-GITHUB_API = "https://api.github.com/repos/YOUR_ORG/YOUR_REPO/releases/latest"
-
-# To your actual repo:
-GITHUB_API = "https://api.github.com/repos/johndoe/piston/releases/latest"
+# Line 20
+GITHUB_API = "https://api.github.com/repos/NickMenzel7/Piston/releases/latest"
 ```
+
+✅ No changes needed!
 
 ### **Disable Update Checks** (optional)
 
