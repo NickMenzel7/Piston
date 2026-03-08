@@ -805,6 +805,7 @@ class PlannerApp(tk.Tk):
                                    activebackground='#094771', activeforeground='#ffffff',
                                    relief='flat', borderwidth=1)
                 help_menu.add_command(label="View Debug Log", command=lambda: self._show_debug_log())
+                help_menu.add_command(label="Check for Updates", command=lambda: self._manual_update_check())
                 help_menu.add_separator()
                 help_menu.add_command(label="About Piston", command=lambda: messagebox.showinfo(
                     "About Piston", 
@@ -2164,10 +2165,28 @@ class PlannerApp(tk.Tk):
     def _show_update_banner(self, info):
         """Show update notification banner at top of window."""
         try:
+            # DEBUG: Confirm this method is being called
+            logger.info("_show_update_banner called with version: %s", info.get('version', 'unknown'))
+
             # Create banner at very top (above header)
             banner = tk.Frame(self, bg='#0d7fa5', height=40)
-            banner.pack(side='top', fill='x', before=self.winfo_children()[0])
+
+            # Try to pack before first child, fallback to just packing at top
+            try:
+                children = self.winfo_children()
+                logger.info("Window has %d children", len(children))
+                if children:
+                    banner.pack(side='top', fill='x', before=children[0])
+                else:
+                    banner.pack(side='top', fill='x')
+            except Exception as e:
+                logger.warning("Failed packing with before, using fallback: %s", e)
+                banner.pack(side='top', fill='x')
+
             banner.pack_propagate(False)
+            banner.lift()  # Ensure banner is visible on top
+
+            logger.info("Banner frame created and packed")
 
             # Icon + Message
             msg = f"  📦  Piston {info['version']} is available  ({info.get('size_mb', 0):.1f} MB)"
@@ -2177,6 +2196,8 @@ class PlannerApp(tk.Tk):
                 bg='#0d7fa5', fg='white',
                 font=('Segoe UI', 9, 'bold')
             ).pack(side='left', padx=15, pady=8)
+
+            logger.info("Banner message label created")
 
             # Update Now button
             tk.Button(
@@ -2456,6 +2477,47 @@ class PlannerApp(tk.Tk):
         except Exception:
             logger.exception("Update download/install failed")
             messagebox.showerror("Update Failed", "An error occurred during the update process.")
+
+    def _manual_update_check(self):
+        """Manually trigger update check (for testing/debugging)."""
+        try:
+            from piston_core.updater import check_for_updates, get_current_version
+            import threading
+
+            current = get_current_version()
+
+            # Show checking message
+            messagebox.showinfo("Check for Updates", f"Checking for updates...\nCurrent version: {current}")
+
+            # Check in background
+            def check_thread():
+                try:
+                    update_info = check_for_updates(current)
+
+                    # Show result in main thread
+                    def show_result():
+                        if update_info.get('available'):
+                            self._show_update_banner(update_info)
+                            messagebox.showinfo("Update Available", 
+                                f"Piston {update_info['version']} is available!\nSee banner at top of window.")
+                        elif update_info.get('error'):
+                            messagebox.showwarning("Update Check", 
+                                f"Could not check for updates:\n{update_info.get('error')}")
+                        else:
+                            messagebox.showinfo("Up to Date", 
+                                f"You're running the latest version ({current})")
+
+                    self.after(0, show_result)
+
+                except Exception as e:
+                    logger.exception("Manual update check failed")
+                    self.after(0, lambda: messagebox.showerror("Error", f"Update check failed: {e}"))
+
+            threading.Thread(target=check_thread, daemon=True).start()
+
+        except Exception:
+            logger.exception("Error starting manual update check")
+            messagebox.showerror("Error", "Failed to start update check")
 
 def main():
     # Robust startup wrapper: run the app and ensure any exceptions are visible
