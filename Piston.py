@@ -161,8 +161,8 @@ class PlannerApp(tk.Tk):
     def __init__(self):
         super().__init__()
         logger.debug("PlannerApp.__init__ start")
-        # Window title (updated)
-        self.title("Piston V1.0")
+        # Window title with version
+        self.title("Piston v1.0.1 - Test Scheduler")
         # keep the fixed size you requested — enlarged default so Tests columns are visible on launch
         self.geometry("1400x900")   # initial size only; let user resize
         self.resizable(True, True)
@@ -833,10 +833,10 @@ class PlannerApp(tk.Tk):
                 try:
                     toolbar = ttk.Frame(header)
                     toolbar.grid(row=0, column=0, sticky='w')
-                    ttk.Button(toolbar, text="View StationMap", command=lambda: self._safe_call('view_stationmap')).pack(side='left', padx=(0,4))
-                    ttk.Button(toolbar, text="View NonTestGroups", command=lambda: self._safe_call('view_nontest')).pack(side='left', padx=4)
+                    ttk.Button(toolbar, text="View Stations", command=lambda: self._safe_call('view_stationmap')).pack(side='left', padx=(0,4))
+                    ttk.Button(toolbar, text="View Groups", command=lambda: self._safe_call('view_nontest')).pack(side='left', padx=4)
                     try:
-                        ttk.Button(toolbar, text="Inspect Dependencies", command=lambda: self._safe_call('view_dependency_debug')).pack(side='left', padx=4)
+                        ttk.Button(toolbar, text="View Dependencies", command=lambda: self._safe_call('view_dependency_debug')).pack(side='left', padx=4)
                     except Exception:
                         pass
                 except Exception:
@@ -1511,15 +1511,53 @@ class PlannerApp(tk.Tk):
             pass
 
     def _validate_controls(self):
-        """Validate numeric inputs and enable/disable Calculate button and update summary."""
+        """Validate numeric inputs with reasonable limits to prevent crashes and enable/disable Calculate button."""
         try:
             ok = True
+            warning_msg = None
+
+            # Reasonable limits to prevent crashes and extreme calculations
+            MAX_UNITS = 5000        # Maximum units (schedule creates N * tests entries)
+            MAX_TIME_HOURS = 720    # Maximum 30 days
+            MAX_SPINS = 10          # Spins multiply schedule size exponentially
+            MAX_YIELD = 100.0       # Cannot exceed 100%
+            MIN_YIELD = 0.1         # Must be positive (0.1% minimum)
+
+            # Warning thresholds (inform user but allow calculation)
+            WARN_UNITS = 1000       # Warn above 1000 units
+            WARN_TIME = 168         # Warn above 1 week
+            WARN_SPINS = 5          # Warn above 5 spins
+
             # Validate N if required
             if self.mode_var.get() == 'time_for_n':
                 try:
                     n = int(float(self.n_var.get() or 0))
                     if n <= 0:
                         ok = False
+                    elif n > MAX_UNITS:
+                        ok = False
+                        messagebox.showerror(
+                            "Invalid Input",
+                            f"Units must be between 1 and {MAX_UNITS:,}.\n\n"
+                            f"You entered: {n:,}\n\n"
+                            f"Large values may cause memory issues or crashes."
+                        )
+                        # Reset to max
+                        self.n_var.set(str(MAX_UNITS))
+                        return False
+                    elif n > WARN_UNITS and not hasattr(self, '_warned_units'):
+                        # Show warning once per session
+                        response = messagebox.askokcancel(
+                            "Large Calculation",
+                            f"You entered {n:,} units.\n\n"
+                            f"This is a large calculation that may take several minutes.\n\n"
+                            f"Continue?",
+                            icon='warning'
+                        )
+                        if not response:
+                            ok = False
+                        else:
+                            self._warned_units = True  # Don't warn again this session
                 except Exception:
                     ok = False
             else:
@@ -1527,28 +1565,107 @@ class PlannerApp(tk.Tk):
                     t = float(self.t_var.get() or 0.0)
                     if t <= 0.0:
                         ok = False
+                    elif t > MAX_TIME_HOURS:
+                        ok = False
+                        messagebox.showerror(
+                            "Invalid Input",
+                            f"Time must be between 0.1 and {MAX_TIME_HOURS} hours ({MAX_TIME_HOURS/24:.0f} days).\n\n"
+                            f"You entered: {t:.1f} hours\n\n"
+                            f"Extremely long time periods are not practical for test scheduling."
+                        )
+                        # Reset to max
+                        self.t_var.set(str(MAX_TIME_HOURS))
+                        return False
+                    elif t > WARN_TIME and not hasattr(self, '_warned_time'):
+                        # Show warning once per session
+                        response = messagebox.askokcancel(
+                            "Long Time Period",
+                            f"You entered {t:.1f} hours ({t/24:.1f} days).\n\n"
+                            f"This is a very long time period.\n\n"
+                            f"Continue?",
+                            icon='warning'
+                        )
+                        if not response:
+                            ok = False
+                        else:
+                            self._warned_time = True  # Don't warn again this session
                 except Exception:
                     ok = False
 
-            # spins (optional, defaults to 0 if invalid)
+            # Validate spins with reasonable maximum
             try:
                 sp = int(float(self.spins_var.get() or 0))
                 if sp < 0:
                     ok = False
+                elif sp > MAX_SPINS:
+                    ok = False
+                    messagebox.showerror(
+                        "Invalid Input",
+                        f"Spins must be between 0 and {MAX_SPINS}.\n\n"
+                        f"You entered: {sp}\n\n"
+                        f"Each spin multiplies the schedule size. High values may cause crashes."
+                    )
+                    # Reset to max
+                    self.spins_var.set(str(MAX_SPINS))
+                    return False
+                elif sp > WARN_SPINS and sp <= MAX_SPINS and not hasattr(self, '_warned_spins'):
+                    # Show warning once per session
+                    response = messagebox.askokcancel(
+                        "High Spin Count",
+                        f"You entered {sp} spins.\n\n"
+                        f"Each spin multiplies the calculation time and memory usage.\n\n"
+                        f"Continue?",
+                        icon='warning'
+                    )
+                    if not response:
+                        ok = False
+                    else:
+                        self._warned_spins = True  # Don't warn again this session
             except Exception:
                 # Don't fail validation for invalid spins - just use default
                 pass
 
-            # yield (optional, defaults to 100% if invalid)
+            # Validate yield with proper range (0.1% to 100%)
             try:
                 y = float(self.yield_var.get() or 100.0)
-                if y <= 0 or y > 10000:
+                if y < MIN_YIELD or y > MAX_YIELD:
                     ok = False
+                    messagebox.showerror(
+                        "Invalid Input",
+                        f"Yield must be between {MIN_YIELD}% and {MAX_YIELD}%.\n\n"
+                        f"You entered: {y}%\n\n"
+                        f"Yield represents the percentage of units that pass testing."
+                    )
+                    # Reset to 100%
+                    self.yield_var.set('100')
+                    return False
             except Exception:
                 # Don't fail validation for invalid yield - just use default
                 pass
 
-            # Advanced controls removed - validation no longer needed
+            # Validate total channel count (sum should be reasonable)
+            try:
+                single = int(float(self.single_var.get() or 0))
+                dual = int(float(self.dual_var.get() or 0))
+                quad = int(float(self.quad_var.get() or 0))
+                total_channels = single + (dual * 2) + (quad * 4)
+
+                if total_channels > 500:  # Reasonable maximum total channels
+                    if not hasattr(self, '_warned_channels'):
+                        response = messagebox.askokcancel(
+                            "High Channel Count",
+                            f"Total channel capacity: {total_channels} channels\n"
+                            f"(Single={single}, Dual={dual}, Quad={quad})\n\n"
+                            f"This is a very large setup that may slow calculations.\n\n"
+                            f"Continue?",
+                            icon='warning'
+                        )
+                        if not response:
+                            ok = False
+                        else:
+                            self._warned_channels = True
+            except Exception:
+                pass
 
             # update button state
             try:
@@ -1562,9 +1679,9 @@ class PlannerApp(tk.Tk):
             # update compact summary
             try:
                 if self.mode_var.get() == 'time_for_n':
-                    self.calc_summary_var.set(f"Mode: Time for N | N={self.n_var.get()} | Spins={self.spins_var.get()} | Yield={self.yield_var.get()}%")
+                    self.calc_summary_var.set(f"Mode: Time for {self.n_var.get()} units  |  Spins: {self.spins_var.get()}  |  Yield: {self.yield_var.get()}%")
                 else:
-                    self.calc_summary_var.set(f"Mode: Units in T | T={self.t_var.get()} hrs | Spins={self.spins_var.get()} | Yield={self.yield_var.get()}%")
+                    self.calc_summary_var.set(f"Mode: Units in {self.t_var.get()}h  |  Spins: {self.spins_var.get()}  |  Yield: {self.yield_var.get()}%")
             except Exception:
                 pass
 
