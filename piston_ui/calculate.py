@@ -15,7 +15,7 @@ from piston_core.scheduler import build_dag, schedule_n_units
 from piston_core.constants import is_hidden_station
 from piston_ui.validation_helper import build_tests_info
 from piston_ui.scheduler_helper import compute_schedule
-from piston_ui.channels_helper import build_channels_spec
+# Channel config is now per-project (no need for channels_helper)
 
 logger = logging.getLogger("piston")
 
@@ -238,15 +238,9 @@ def _parse_n_req(app, mode):
             messagebox.showerror("Input error", "Invalid N value")
             return None
     else:
-        # For units_in_t mode, estimate n_req from channel quantities or use default
-        try:
-            single = int(app.single_var.get() or 0)
-            dual = int(app.dual_var.get() or 0)
-            quad = int(app.quad_var.get() or 0)
-            total_units = single + dual + quad
-            return total_units if total_units > 0 else 10  # Default search space
-        except (ValueError, TypeError):
-            return 10  # Default fallback
+        # For units_in_t mode, use a reasonable default search space
+        # Channel configuration is implicit in project selection
+        return 10  # Default search space for units_in_t mode
 
 
 def _check_sufficient_stations(st_map, n_req):
@@ -273,51 +267,17 @@ def _check_sufficient_stations(st_map, n_req):
 
 
 def _build_channels_spec_validated(app, mode, n_req):
-    """Build and validate channels specification from UI inputs.
-    
-    Returns channels_spec (int or list).
+    """Build channels specification (always 1 since config is per-project).
+
+    Channel configuration is now implicit in project selection:
+    - "VXG 54GHz Single Channel" project has single-channel test plan
+    - "VXG 54GHz Dual Channel" project has dual-channel test plan  
+    - etc.
+
+    Returns channels_spec = 1 (no multiplier needed).
     """
-    try:
-        channels_spec = build_channels_spec(
-            app.single_var.get(), 
-            app.dual_var.get(), 
-            app.quad_var.get(), 
-            freeform_spec=app.channels_var.get(), 
-            n_units=n_req, 
-            parse_channels_fn=app._parse_channels_spec
-        )
-        logger.info("build_channels_spec returned: %r (type=%s)", channels_spec, type(channels_spec))
-    except Exception:
-        logger.exception("build_channels_spec failed, using default")
-        channels_spec = 1
-    
-    # Validate: If user specified explicit quantities, build explicit list
-    if mode == 'time_for_n' and n_req:
-        try:
-            single = int(app.single_var.get() or 0)
-            dual = int(app.dual_var.get() or 0)
-            quad = int(app.quad_var.get() or 0)
-            
-            if single > 0 or dual > 0 or quad > 0:
-                expected_units = single + dual + quad
-                if expected_units != n_req:
-                    logger.warning("Channel unit count (%d) != N (%d), using N", expected_units, n_req)
-                
-                # Build explicit list: [1,1,...] for single, [2,2,...] for dual, [4,4,...] for quad
-                explicit_spec = [1] * single + [2] * dual + [4] * quad
-                
-                # Pad or trim to match n_req
-                if len(explicit_spec) < n_req:
-                    explicit_spec.extend([1] * (n_req - len(explicit_spec)))
-                elif len(explicit_spec) > n_req:
-                    explicit_spec = explicit_spec[:n_req]
-                
-                logger.info("Overriding channels_spec with explicit: %r", explicit_spec)
-                channels_spec = explicit_spec
-        except Exception:
-            logger.exception("Failed building explicit channels_spec, using returned value")
-    
-    return channels_spec
+    logger.info("Channel config is per-project, using channels_spec=1")
+    return 1  # Always 1 - channel differences are in the project's test plan
 
 
 def _calculate_time_for_n(app, st_map, n_req, channels_spec, sufficient_stations):

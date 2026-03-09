@@ -238,10 +238,9 @@ class PlannerApp(tk.Tk):
         self.use_include_var = tk.BooleanVar(value=True)
         self.exclude_non_test_var = tk.BooleanVar(value=False)
 
-        # New explicit per-channel-unit quantity controls (defaults 0)
-        self.single_var = tk.StringVar(value='0')   # single-channel units
-        self.dual_var = tk.StringVar(value='0')     # dual-channel units
-        self.quad_var = tk.StringVar(value='0')     # quad-channel units
+        # Channel configuration is now implicit in project selection
+        # (e.g., "VXG 54GHz Single Channel" vs "VXG 54GHz Dual Channel")
+        # No need for explicit channel quantity controls
 
         # Spins: number of full re-test spins to include per unit (0 = none)
         self.spins_var = tk.StringVar(value='0')
@@ -897,8 +896,8 @@ class PlannerApp(tk.Tk):
                 except Exception:
                     logger.exception('Failed creating header right-side controls')
 
-                # make middle column expand so right_frame sticks right
-                header.columnconfigure(1, weight=1)
+                # make left column expand so right_frame sticks right
+                controls_frame.columnconfigure(0, weight=1)
 
                 # Remove Alt+L Load Excel accelerator since loading is automatic at startup
                 try:
@@ -908,7 +907,8 @@ class PlannerApp(tk.Tk):
             except Exception:
                 logger.exception('Failed creating header')
 
-            # Compact controls header: channel quantities | mode/inputs | actions
+            # Compact controls header: mode/inputs | actions
+            # Channel configuration is now implicit in project selection
             try:
                 controls_container = ttk.Frame(self, style='Uniform.TFrame')
                 controls_container.pack(fill='x', padx=10, pady=8)
@@ -921,50 +921,9 @@ class PlannerApp(tk.Tk):
                 controls_frame = ttk.Frame(controls_border)
                 controls_frame.pack(fill='x', padx=6, pady=6)
 
-                # left: channel quantities
-                ch_frame = ttk.Frame(controls_frame)
-                ch_frame.grid(row=0, column=0, sticky='w', padx=(6,12))
-                ttk.Label(ch_frame, text='Channel Quantities', font=('TkDefaultFont', 9, 'bold')).grid(row=0, column=0, columnspan=3, sticky='w')
-                ttk.Label(ch_frame, text='Single').grid(row=1, column=0, padx=6, pady=(6,2))
-                ttk.Label(ch_frame, text='Dual').grid(row=1, column=1, padx=6, pady=(6,2))
-                ttk.Label(ch_frame, text='Quad').grid(row=1, column=2, padx=6, pady=(6,2))
-                # use Spinbox for compact constrained integer input
-                try:
-                    # Create spinboxes with minimal styling to ensure arrows are visible
-                    # Keep configuration simple for cross-platform compatibility
-                    self.single_spin = tk.Spinbox(ch_frame, from_=0, to=99, width=5, 
-                                                  textvariable=self.single_var,
-                                                  bg='#3c3c3c', fg='#d4d4d4',
-                                                  buttonbackground='#707070',
-                                                  insertbackground='#d4d4d4',
-                                                  selectbackground='#094771',
-                                                  selectforeground='#ffffff')
-                    self.dual_spin = tk.Spinbox(ch_frame, from_=0, to=99, width=5,
-                                                textvariable=self.dual_var,
-                                                bg='#3c3c3c', fg='#d4d4d4',
-                                                buttonbackground='#707070',
-                                                insertbackground='#d4d4d4',
-                                                selectbackground='#094771',
-                                                selectforeground='#ffffff')
-                    self.quad_spin = tk.Spinbox(ch_frame, from_=0, to=99, width=5,
-                                                textvariable=self.quad_var,
-                                                bg='#3c3c3c', fg='#d4d4d4',
-                                                buttonbackground='#707070',
-                                                insertbackground='#d4d4d4',
-                                                selectbackground='#094771',
-                                                selectforeground='#ffffff')
-                    self.single_spin.grid(row=2, column=0, padx=6, pady=(0,6))
-                    self.dual_spin.grid(row=2, column=1, padx=6, pady=(0,6))
-                    self.quad_spin.grid(row=2, column=2, padx=6, pady=(0,6))
-                except Exception:
-                    # fallback to Entry if Spinbox unavailable
-                    ttk.Entry(ch_frame, textvariable=self.single_var, width=6).grid(row=2, column=0, padx=6, pady=(0,6))
-                    ttk.Entry(ch_frame, textvariable=self.dual_var, width=6).grid(row=2, column=1, padx=6, pady=(0,6))
-                    ttk.Entry(ch_frame, textvariable=self.quad_var, width=6).grid(row=2, column=2, padx=6, pady=(0,6))
-
-                # center: mode and inputs
+                # left: mode and inputs (no channel quantities needed)
                 mid_frame = ttk.Frame(controls_frame)
-                mid_frame.grid(row=0, column=1, sticky='ew', padx=6)
+                mid_frame.grid(row=0, column=0, sticky='ew', padx=6)
 
                 # mode radios in compact form
                 rb_frame = ttk.Frame(mid_frame)
@@ -1005,7 +964,7 @@ class PlannerApp(tk.Tk):
                 # right: actions (Calculate button only)
                 try:
                     act_frame = ttk.Frame(controls_frame)
-                    act_frame.grid(row=0, column=2, sticky='e', padx=(6,12))
+                    act_frame.grid(row=0, column=1, sticky='e', padx=(6,12))
                     self.calc_button = ttk.Button(act_frame, text='Calculate', command=lambda: self._safe_call('calculate'), width=12)
                     self.calc_button.grid(row=0, column=0, padx=(0,8))
                     # Yellowstone-only option hidden for now; keep variable for future use
@@ -1039,17 +998,7 @@ class PlannerApp(tk.Tk):
                         ent.bind('<Return>', _on_enter_key)  # Trigger calculate on Enter
                     except Exception:
                         pass
-                # bind spinbox changes if present
-                try:
-                    self.single_spin.bind('<KeyRelease>', _on_input_change)
-                    self.dual_spin.bind('<KeyRelease>', _on_input_change)
-                    self.quad_spin.bind('<KeyRelease>', _on_input_change)
-                    # Also bind Enter key for spinboxes
-                    self.single_spin.bind('<Return>', _on_enter_key)
-                    self.dual_spin.bind('<Return>', _on_enter_key)
-                    self.quad_spin.bind('<Return>', _on_enter_key)
-                except Exception:
-                    pass
+                # Channel quantity controls removed - no bindings needed
                 # Advanced controls removed - no bindings needed
             except Exception:
                 pass
@@ -1643,29 +1592,9 @@ class PlannerApp(tk.Tk):
                 # Don't fail validation for invalid yield - just use default
                 pass
 
-            # Validate total channel count (sum should be reasonable)
-            try:
-                single = int(float(self.single_var.get() or 0))
-                dual = int(float(self.dual_var.get() or 0))
-                quad = int(float(self.quad_var.get() or 0))
-                total_channels = single + (dual * 2) + (quad * 4)
-
-                if total_channels > 500:  # Reasonable maximum total channels
-                    if not hasattr(self, '_warned_channels'):
-                        response = messagebox.askokcancel(
-                            "High Channel Count",
-                            f"Total channel capacity: {total_channels} channels\n"
-                            f"(Single={single}, Dual={dual}, Quad={quad})\n\n"
-                            f"This is a very large setup that may slow calculations.\n\n"
-                            f"Continue?",
-                            icon='warning'
-                        )
-                        if not response:
-                            ok = False
-                        else:
-                            self._warned_channels = True
-            except Exception:
-                pass
+            # Validate total channel count (removed - channels implicit in project)
+            # Channel configuration is now per-project (e.g., "VXG 54GHz Dual Channel")
+            # No validation needed here
 
             # update button state
             try:

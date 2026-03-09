@@ -75,6 +75,7 @@
     <Compile Include="test_alternate_spins.py" />
     <Compile Include="test_capacity_estimator_fix.py" />
     <Compile Include="test_channel_exclusion.py" />
+    <Compile Include="test_channel_migration.py" />
     <Compile Include="test_ff_scenario.py" />
     <Compile Include="test_final_verification.py" />
     <Compile Include="test_gui_cleanup.py" />
@@ -122,6 +123,8 @@
     <Content Include="build_windows.ps1" />
     <Content Include="CAPACITY_ESTIMATOR_FIX.md" />
     <Content Include="CAPACITY_ESTIMATOR_REDESIGN.md" />
+    <Content Include="CHANNEL_CONFIG_MIGRATION.md" />
+    <Content Include="CHANNEL_UI_CHANGES.md" />
     <Content Include="CLEANUP_SUMMARY.md" />
     <Content Include="clear_icon_cache.bat" />
     <Content Include="COMPLETE_CLEANUP_REPORT.md" />
