@@ -24,16 +24,15 @@ pip install pyinstaller
 
 if ($onefile) {
   Write-Host "Building single-file executable..."
-  & $pyinstaller --noconfirm --onefile --windowed --name piston Piston.py
+  python -m PyInstaller --noconfirm --onefile --windowed --name piston Piston.py
 } else {
   Write-Host "Building directory-based bundle (using piston.spec for configuration)..."
   # Note: piston.spec is configured with console=False to hide console window
   if (Test-Path "piston.spec") {
-    & $pyinstaller --noconfirm piston.spec
+    python -m PyInstaller --noconfirm piston.spec
   } else {
-    & $pyinstaller --noconfirm --name piston Piston.py
+    python -m PyInstaller --noconfirm --name piston Piston.py
   }
-}
 }
 
 Write-Host "Build complete. Check 'dist' and 'build' directories."

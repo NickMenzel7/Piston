@@ -162,7 +162,7 @@ class PlannerApp(tk.Tk):
         super().__init__()
         logger.debug("PlannerApp.__init__ start")
         # Window title with version
-        self.title("Piston v1.0.1 - Test Scheduler")
+        self.title("Piston v1.1.0 - Test Scheduler")
         # keep the fixed size you requested — enlarged default so Tests columns are visible on launch
         self.geometry("1400x900")   # initial size only; let user resize
         self.resizable(True, True)
